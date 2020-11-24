@@ -18,7 +18,7 @@
     </p>
 
     <p>
-      <a href="#" class="btn btn-lg btn-success" href="#">现在注册</a>
+      <a class="btn btn-lg btn-success" href="{{ route('signup') }}">现在注册</a>
     </p>
   </div>
 @endsection

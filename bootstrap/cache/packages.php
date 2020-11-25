@@ -52,4 +52,11 @@
       0 => 'NunoMaduro\\Collision\\Adapters\\Laravel\\CollisionServiceProvider',
     ),
   ),
+  'overtrue/laravel-lang' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'Overtrue\\LaravelLang\\TranslationServiceProvider',
+    ),
+  ),
 );

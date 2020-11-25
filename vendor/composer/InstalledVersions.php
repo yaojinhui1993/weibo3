@@ -19,7 +19,7 @@ private static $installed = array (
     'aliases' => 
     array (
     ),
-    'reference' => 'ab6f97b57801e1cbff937fd8f5b8a04f081bba85',
+    'reference' => '08c1f4ff2e174bcb62eaa263b50a97ccff864c1b',
     'name' => 'laravel/laravel',
   ),
   'versions' => 
@@ -41,6 +41,15 @@ private static $installed = array (
       array (
       ),
       'reference' => 'e6f8e7d04346a95be89580f8c2c22d6c3fa65556',
+    ),
+    'caouecs/laravel-lang' => 
+    array (
+      'pretty_version' => '4.0.11',
+      'version' => '4.0.11.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '134e1cbf9be14d97fc7937d7df784eae2d4bfa3c',
     ),
     'cordoval/hamcrest-php' => 
     array (
@@ -435,7 +444,7 @@ private static $installed = array (
       'aliases' => 
       array (
       ),
-      'reference' => 'ab6f97b57801e1cbff937fd8f5b8a04f081bba85',
+      'reference' => '08c1f4ff2e174bcb62eaa263b50a97ccff864c1b',
     ),
     'laravel/tinker' => 
     array (
@@ -548,6 +557,15 @@ private static $installed = array (
       array (
       ),
       'reference' => '943b5d70cc5ae7483f6aff6ff43d7e34592ca0f5',
+    ),
+    'overtrue/laravel-lang' => 
+    array (
+      'pretty_version' => '3.0.18',
+      'version' => '3.0.18.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => 'd69824be235f6142e3e4226d9918da76e4727774',
     ),
     'phar-io/manifest' => 
     array (

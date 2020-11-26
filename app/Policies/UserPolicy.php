@@ -20,4 +20,9 @@ class UserPolicy
     {
         return $user->id === $model->id;
     }
+
+    public function destroy(User $user, User $model)
+    {
+        return $user->is_admin && $user->id !== $model->id;
+    }
 }

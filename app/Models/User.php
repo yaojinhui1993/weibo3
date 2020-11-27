@@ -62,4 +62,33 @@ class User extends Authenticatable
     {
         return $this->statuses()->orderBy('created_at', 'desc');
     }
+
+    public function followers()
+    {
+        return $this->belongsToMany(User::class, 'followers', 'user_id', 'follower_id');
+    }
+
+    public function followings()
+    {
+        return $this->belongsToMany(User::class, 'followers', 'follower_id', 'user_id');
+    }
+
+    public function follow($userIds)
+    {
+        $userIds = is_array($userIds) ? $userIds : [$userIds];
+
+        $this->followings()->sync($userIds, false);
+    }
+
+    public function unfollow($userIds)
+    {
+        $userIds = is_array($userIds) ? $userIds : [$userIds];
+
+        $this->followings()->detach($userIds, false);
+    }
+
+    public function isFollowing($userId)
+    {
+        return $this->following->contains($userId);
+    }
 }
